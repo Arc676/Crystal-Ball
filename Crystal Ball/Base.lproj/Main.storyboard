@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Crystal_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC" propertyAccessControl="none">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-kI-0N0">
+                                <rect key="frame" x="20" y="57" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your yes/no question here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0iD-Sl-dme">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-wd-O5T">
+                                <rect key="frame" x="20" y="95" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Ask Question"/>
+                                <connections>
+                                    <action selector="askQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTn-JH-857"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Sn-ZE-rIY">
+                                <rect key="frame" x="20" y="133" width="560" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snh-Sn-AuD">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Language"/>
+                                <connections>
+                                    <action selector="openSettingsPane:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sT6-7w-9zx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIL-fb-dok">
+                                <rect key="frame" x="20" y="473" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete Transcript"/>
+                                <connections>
+                                    <action selector="clearLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiJ-LJ-t5P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNF-9K-YKU">
+                                <rect key="frame" x="20" y="512" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Copy Transcript"/>
+                                <connections>
+                                    <action selector="copyText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3o-6l-U7f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="snh-Sn-AuD" secondAttribute="bottom" constant="20" id="0Z9-ut-Ma8"/>
+                            <constraint firstAttribute="bottom" secondItem="snh-Sn-AuD" secondAttribute="bottom" constant="20" symbolic="YES" id="35Z-6U-eNd"/>
+                            <constraint firstItem="oIc-kI-0N0" firstAttribute="leading" secondItem="Gac-wd-O5T" secondAttribute="leading" id="3B4-rb-fQC"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="top" secondItem="jNF-9K-YKU" secondAttribute="bottom" constant="8" symbolic="YES" id="71E-Is-Fej"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9td-gY-AGB"/>
+                            <constraint firstItem="Gac-wd-O5T" firstAttribute="trailing" secondItem="1Sn-ZE-rIY" secondAttribute="trailing" id="CzH-YH-GQ2"/>
+                            <constraint firstItem="PIL-fb-dok" firstAttribute="leading" secondItem="1Sn-ZE-rIY" secondAttribute="leading" id="HYj-0r-G8d"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mre-bH-LcQ"/>
+                            <constraint firstItem="1Sn-ZE-rIY" firstAttribute="top" secondItem="Gac-wd-O5T" secondAttribute="bottom" constant="8" symbolic="YES" id="Npy-mX-aOu"/>
+                            <constraint firstItem="PIL-fb-dok" firstAttribute="top" secondItem="1Sn-ZE-rIY" secondAttribute="bottom" constant="8" symbolic="YES" id="Pn6-pR-GWF"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="trailing" secondItem="jNF-9K-YKU" secondAttribute="trailing" id="T2o-iT-cHP"/>
+                            <constraint firstItem="0iD-Sl-dme" firstAttribute="trailing" secondItem="oIc-kI-0N0" secondAttribute="trailing" id="bzr-0A-ufU"/>
+                            <constraint firstItem="Gac-wd-O5T" firstAttribute="top" secondItem="oIc-kI-0N0" secondAttribute="bottom" constant="8" symbolic="YES" id="cbc-0K-nRL"/>
+                            <constraint firstItem="oIc-kI-0N0" firstAttribute="leading" secondItem="0iD-Sl-dme" secondAttribute="leading" id="e34-JO-ZRs"/>
+                            <constraint firstItem="1Sn-ZE-rIY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fjX-vN-wYL"/>
+                            <constraint firstItem="Gac-wd-O5T" firstAttribute="trailing" secondItem="oIc-kI-0N0" secondAttribute="trailing" id="hNW-tY-8Tc"/>
+                            <constraint firstItem="0iD-Sl-dme" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hbn-ea-K6I"/>
+                            <constraint firstItem="PIL-fb-dok" firstAttribute="trailing" secondItem="1Sn-ZE-rIY" secondAttribute="trailing" id="khd-en-3jN"/>
+                            <constraint firstItem="Gac-wd-O5T" firstAttribute="leading" secondItem="1Sn-ZE-rIY" secondAttribute="leading" id="omS-WQ-Kio"/>
+                            <constraint firstItem="oIc-kI-0N0" firstAttribute="top" secondItem="0iD-Sl-dme" secondAttribute="bottom" constant="8" symbolic="YES" id="onR-io-Nqn"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="leading" secondItem="jNF-9K-YKU" secondAttribute="leading" id="r9z-tH-vIa"/>
+                            <constraint firstItem="jNF-9K-YKU" firstAttribute="top" secondItem="PIL-fb-dok" secondAttribute="bottom" constant="9" id="rJV-6T-4Z6"/>
+                            <constraint firstItem="PIL-fb-dok" firstAttribute="trailing" secondItem="jNF-9K-YKU" secondAttribute="trailing" id="tAw-re-Ijb"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uFu-r6-5h4"/>
+                            <constraint firstItem="jNF-9K-YKU" firstAttribute="leading" secondItem="PIL-fb-dok" secondAttribute="leading" id="vDQ-Va-5tA"/>
+                            <constraint firstItem="snh-Sn-AuD" firstAttribute="top" secondItem="jNF-9K-YKU" secondAttribute="bottom" constant="8" id="weN-v9-S3j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="log" destination="1Sn-ZE-rIY" id="Sm8-tE-6OP"/>
+                        <outlet property="question" destination="oIc-kI-0N0" id="Otc-YD-1SX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="339"/>
+        </scene>
+    </scenes>
+</document>

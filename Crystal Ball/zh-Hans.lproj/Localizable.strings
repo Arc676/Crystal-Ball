@@ -1,0 +1,22 @@
+/* answers */
+"ans0" = "是";
+"ans1" = "否";
+"ans2" = "有可能";
+"ans3" = "晚点儿再问一次吧";
+"ans4" = "肯定的";
+"ans5" = "不可能的";
+"ans6" = "嗯";
+"ans7" = "对";
+"ans8" = "否定";
+"ans9" = "可能性很低";
+"ans10" = "打赌吧！";
+"ans11" = "不管等多久也不会实现的";
+"BackButton" = "返回";
+"langCode" = "zh-Hans";
+"changeLang" = "要把语言换成中文吗？";
+"changeLang2" = "请重启Crystal Ball";
+"transcript" = "Crystal Ball抄本";
+"Yes" = "是";
+"No" = "否";
+"warning" = "注意";
+"confirmLeave" = "如果您改变语言，会丢失所有记录。您要继续吗？";

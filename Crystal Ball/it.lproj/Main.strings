@@ -1,0 +1,14 @@
+/* Class = "UILabel"; text = "Enter your yes/no question here"; ObjectID = "0iD-Sl-dme"; */
+"0iD-Sl-dme.text" = "Digita qui la domanda si/no";
+
+/* Class = "UIButton"; normalTitle = "Ask Question"; ObjectID = "Gac-wd-O5T"; */
+"Gac-wd-O5T.normalTitle" = "Fare la domanda";
+
+/* Class = "UIButton"; normalTitle = "Clear Log"; ObjectID = "PIL-fb-dok"; */
+"PIL-fb-dok.normalTitle" = "Cancellare Transcrizione";
+
+/* copy transcript */
+"jNF-9K-YKU.normalTitle" = "Copiare Trascrizione";
+
+/* settings */
+"snh-Sn-AuD.normalTitle" = "Lingua";

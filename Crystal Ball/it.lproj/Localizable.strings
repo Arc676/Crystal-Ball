@@ -1,0 +1,22 @@
+/* answers */
+"ans0" = "Si";
+"ans1" = "No";
+"ans2" = "Forse";
+"ans3" = "Prova a chiedere più tardi";
+"ans4" = "Certamente";
+"ans5" = "Certo che no";
+"ans6" = "Sicuramente";
+"ans7" = "Direi proprio di no";
+"ans8" = "Perché no?";
+"ans9" = "Non ci scommetterei";
+"ans10" = "Ci può scommettere";
+"ans11" = "Lo dubito";
+"BackButton" = "Indietro";
+"langCode" = "it";
+"changeLang" = "Impostare italiano come la lingua?";
+"changeLang2" = "Riavviare Crystal Ball per impostare la lingua";
+"transcript" = "Trascritto Crystal Ball";
+"Yes" = "Si";
+"No" = "No";
+"warning" = "Attenzione";
+"confirmLeave" = "Se cambia la lingua, perdera il contenuto attuale della trascrizione. Desidera continuare?";

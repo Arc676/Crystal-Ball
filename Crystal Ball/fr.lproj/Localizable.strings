@@ -1,0 +1,22 @@
+/* answers */
+"ans0" = "Oui";
+"ans1" = "Non";
+"ans2" = "Peut-être";
+"ans3" = "Demandez plus tard";
+"ans4" = "Absolument";
+"ans5" = "Absolument pas";
+"ans6" = "Bien sûr";
+"ans7" = "Faux";
+"ans8" = "Pourquoi pas?";
+"ans9" = "Je ne parierais pas";
+"ans10" = "Vous pouvez parier";
+"ans11" = "Je le doute";
+"BackButton" = "Retour";
+"langCode" = "fr";
+"changeLang" = "Installer français comme la langue?";
+"changeLang2" = "Redémarrez Crystal Ball pour changer la langue";
+"transcript" = "Transcription Crystal Ball";
+"Yes" = "Oui";
+"No" = "Non";
+"warning" = "Attention";
+"confirmLeave" = "Si vous changez la langue, vous perdrez le contenu actuel de la transcription. Voulez-vous continuer?";

@@ -1,0 +1,30 @@
+/*
+  InfoPlist.strings
+  Crystal Ball
+
+  Created by Alessandro Vinciguerra on 1/2/16.
+  Copyright © 2016 Arc676. All rights reserved.
+*/
+
+/* answers */
+"ans0" = "Yes";
+"ans1" = "No";
+"ans2" = "Maybe";
+"ans3" = "Try asking again later";
+"ans4" = "Definitely";
+"ans5" = "Of course not";
+"ans6" = "Sure";
+"ans7" = "Nope";
+"ans8" = "Why not?";
+"ans9" = "I wouldn't bet on it";
+"ans10" = "You bet!";
+"ans11" = "Don't hold your breath";
+"BackButton" = "Back";
+"langCode" = "en";
+"changeLang" = "Change the language to English?";
+"changeLang2" = "Please restart Crystal Ball to change the language";
+"transcript" = "Crystal Ball Transcript";
+"Yes" = "Yes";
+"No" = "No";
+"warning" = "Warning";
+"confirmLeave" = "You will lose the current log contents if you change the language. Do you want to continue?";
