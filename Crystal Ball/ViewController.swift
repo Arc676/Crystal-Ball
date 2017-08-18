@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     let answerCount = 12
 
-    func locStr(key: String) -> String{
+    func locStr(_ key: String) -> String{
         return NSLocalizedString(key, comment: "")
     }
 
@@ -30,51 +30,51 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let sud = NSUserDefaults.standardUserDefaults()
-        if !(sud.valueForKey("LanguageConfirmed") as! Bool) {
-            let lang = sud.valueForKey("AppleLanguages")?.objectAtIndex(0) as! String
+        let sud = UserDefaults.standard
+        if !(sud.value(forKey: "LanguageConfirmed") as! Bool) {
+            let lang = sud.value(forKey: "AppleLanguages")?.objectAtIndex(0) as! String
             if lang != NSLocalizedString("langCode", comment: "") {
                 var okPressed = false
-                let alert = UIAlertController(title: "Language Selection", message: locStr("changeLang"), preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: locStr("No"), style: .Cancel, handler: nil))
-                alert.addAction(UIAlertAction(title: locStr("Yes"), style: .Default, handler: { _ in
-                    sud.setObject([lang], forKey: "AppleLanguages")
+                let alert = UIAlertController(title: "Language Selection", message: locStr("changeLang"), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: locStr("No"), style: .cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: locStr("Yes"), style: .default, handler: { _ in
+                    sud.set([lang], forKey: "AppleLanguages")
                     sud.synchronize()
                     okPressed = true
                 }))
                 
-                presentViewController(alert, animated: true, completion: nil)
+                present(alert, animated: true, completion: nil)
                 if okPressed{
-                    let newalert = UIAlertController(title: "", message: locStr("changeLang2"), preferredStyle: .Alert)
-                    presentViewController(newalert, animated: true, completion: nil)
+                    let newalert = UIAlertController(title: "", message: locStr("changeLang2"), preferredStyle: .alert)
+                    present(newalert, animated: true, completion: nil)
                 }
             }
-            sud.setObject(true, forKey: "LanguageConfirmed")
+            sud.set(true, forKey: "LanguageConfirmed")
         }
     }
     
-    @IBAction func openSettingsPane(sender: AnyObject) {
-        let alert = UIAlertController(title: locStr("warning"), message: locStr("confirmLeave"), preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: locStr("No"), style: .Cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: locStr("Yes"), style: .Destructive, handler: { _ in
-            NSNotificationCenter.defaultCenter().postNotificationName("userDidEnterSettings", object: nil)
-            UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+    @IBAction func openSettingsPane(_ sender: AnyObject) {
+        let alert = UIAlertController(title: locStr("warning"), message: locStr("confirmLeave"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: locStr("No"), style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: locStr("Yes"), style: .destructive, handler: { _ in
+            NotificationCenter.default.post(name: Notification.Name(rawValue: "userDidEnterSettings"), object: nil)
+            UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
         }))
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func clearLog(sender: AnyObject) {
+    @IBAction func clearLog(_ sender: AnyObject) {
         log.text = locStr("transcript")
     }
 
-    @IBAction func copyText(sender: AnyObject) {
-        UIPasteboard.generalPasteboard().string = locStr("transcript") + "\n" + String(NSDate()) + "\n" + log.text
+    @IBAction func copyText(_ sender: AnyObject) {
+        UIPasteboard.general.string = locStr("transcript") + "\n" + String(Date()) + "\n" + log.text
     }
 
-    @IBAction func askQuestion(sender: AnyObject) {
+    @IBAction func askQuestion(_ sender: AnyObject) {
         let text = NSMutableString(string: log.text);
         let key = "ans" + String(arc4random_uniform(UInt32(answerCount)))
         text.appendFormat("\nQ: %@\nA: %@", question.text!,

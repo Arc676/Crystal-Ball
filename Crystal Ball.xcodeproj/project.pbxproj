@@ -226,15 +226,18 @@
 					7120BA1B1C3541B6009F35AF = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = T42F23M422;
+						LastSwiftMigration = 0830;
 					};
 					7120BA2F1C3541B7009F35AF = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = VMNQE63MQJ;
+						LastSwiftMigration = 0830;
 						TestTargetID = 7120BA1B1C3541B6009F35AF;
 					};
 					7120BA3A1C3541B7009F35AF = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = VMNQE63MQJ;
+						LastSwiftMigration = 0830;
 						TestTargetID = 7120BA1B1C3541B6009F35AF;
 					};
 				};
@@ -484,6 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arc676.CrystalBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -498,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Arc676.CrystalBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -510,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Arc676.Crystal-BallTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crystal Ball.app/Crystal Ball";
 			};
 			name = Debug;
@@ -522,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Arc676.Crystal-BallTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crystal Ball.app/Crystal Ball";
 			};
 			name = Release;
@@ -533,6 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Arc676.Crystal-BallUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Crystal Ball";
 				USES_XCTRUNNER = YES;
 			};
@@ -545,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Arc676.Crystal-BallUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Crystal Ball";
 				USES_XCTRUNNER = YES;
 			};
