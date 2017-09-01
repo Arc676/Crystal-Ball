@@ -1,3 +1,37 @@
-/* No comment provided by engineer. */
-"langCode" = "fr";
+//Copyright (C) 2016-2017 Arc676/Alessandro Vinciguerra <alesvinciguerra@gmail.com>
 
+//This program is free software: you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation (version 3)
+
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+
+//You should have received a copy of the GNU General Public License
+//along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//See README and LICENSE for more details
+
+/* answers */
+"ans0" = "Oui";
+"ans1" = "Non";
+"ans2" = "Peut-être";
+"ans3" = "Demandez plus tard";
+"ans4" = "Absolument";
+"ans5" = "Absolument pas";
+"ans6" = "Bien sûr";
+"ans7" = "Faux";
+"ans8" = "Pourquoi pas?";
+"ans9" = "Je ne parierais pas";
+"ans10" = "Vous pouvez parier";
+"ans11" = "Je le doute";
+"BackButton" = "Retour";
+"langCode" = "fr";
+"changeLang" = "Installer français comme la langue?";
+"changeLang2" = "Redémarrez Crystal Ball pour changer la langue";
+"transcript" = "Transcription Crystal Ball";
+"Yes" = "Oui";
+"No" = "Non";
+"warning" = "Attention";
+"confirmLeave" = "Si vous changez la langue, vous perdrez le contenu actuel de la transcription. Voulez-vous continuer?";
