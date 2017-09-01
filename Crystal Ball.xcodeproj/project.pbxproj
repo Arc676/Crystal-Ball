@@ -22,6 +22,7 @@
 		719C3D4A1C3A83E7007E8EA5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 719C3D491C3A83E6007E8EA5 /* Settings.bundle */; };
 		71CB74A81F594E480010603A /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB74A71F594E480010603A /* Backend.swift */; };
 		71CB74A91F594F7E0010603A /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB74A71F594E480010603A /* Backend.swift */; };
+		71CB74AB1F59523E0010603A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 71CB74AA1F59523E0010603A /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		7188841D1C37E88900C321F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		719C3D491C3A83E6007E8EA5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Crystal Ball/Settings.bundle"; sourceTree = "<group>"; };
 		71CB74A71F594E480010603A /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Backend.swift; path = Universal/Backend.swift; sourceTree = "<group>"; };
+		71CB74AA1F59523E0010603A /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		71CBF6F41F58ED3800ABFD80 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		71CBF6F61F58ED3A00ABFD80 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		71CBF6F81F58ED3B00ABFD80 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				713D2ADE1F473BB600C88E16 /* Assets.xcassets */,
 				713D2AE01F473BB600C88E16 /* Main.storyboard */,
 				713D2AE31F473BB600C88E16 /* Info.plist */,
+				71CB74AA1F59523E0010603A /* Credits.rtf */,
 			);
 			path = "Crystal Ball Mac";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				713D2ADF1F473BB600C88E16 /* Assets.xcassets in Resources */,
 				713D2AE71F473C4D00C88E16 /* Localizable.strings in Resources */,
 				713D2AE21F473BB600C88E16 /* Main.storyboard in Resources */,
+				71CB74AB1F59523E0010603A /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
