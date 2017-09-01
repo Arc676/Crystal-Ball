@@ -26,8 +26,8 @@
 /* Class = "NSMenuItem"; title = "About Crystal Ball Mac"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "About Crystal Ball Mac";
 
-/* Class = "NSTextFieldCell"; title = "Enter question"; ObjectID = "6KG-Pm-Cwf"; */
-"6KG-Pm-Cwf.title" = "Enter question";
+/* Class = "NSTextFieldCell"; title = "Enter yes/no question"; ObjectID = "6KG-Pm-Cwf"; */
+"6KG-Pm-Cwf.title" = "Enter yes/no question";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Redo";
@@ -49,6 +49,9 @@
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
 "DVo-aG-piG.title" = "Close";
+
+/* Class = "NSButtonCell"; title = "Clear Transcript"; ObjectID = "Df2-m2-8EU"; */
+"Df2-m2-8EU.title" = "Clear Transcript";
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
 "Dv1-io-Yv7.title" = "Spelling and Grammar";
@@ -91,6 +94,9 @@
 
 /* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
 "Oyz-dy-DGm.title" = "Stop Speaking";
+
+/* Class = "NSButtonCell"; title = "Ask Question"; ObjectID = "Pkj-jJ-fIe"; */
+"Pkj-jJ-fIe.title" = "Ask Question";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
