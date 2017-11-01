@@ -19,8 +19,8 @@ class ViewControllerMac : NSViewController {
 	}
 
 	@IBAction func askQuestion(_ sender: Any) {
-		transcript.string = Backend.askQ(log: transcript.string!, question: questionField.stringValue)
-		transcript.scrollRangeToVisible(NSMakeRange(transcript.string!.characters.count - 1, 1))
+		transcript.string = Backend.askQ(log: transcript.string, question: questionField.stringValue)
+		transcript.scrollRangeToVisible(NSMakeRange(transcript.string.count - 1, 1))
 	}
 
 	@IBAction func clearTranscript(_ sender: Any) {
