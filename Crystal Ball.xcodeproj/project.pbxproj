@@ -12,15 +12,12 @@
 		7120BA251C3541B6009F35AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7120BA231C3541B6009F35AF /* Main.storyboard */; };
 		7120BA271C3541B6009F35AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7120BA261C3541B6009F35AF /* Assets.xcassets */; };
 		7120BA2A1C3541B6009F35AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7120BA281C3541B6009F35AF /* LaunchScreen.storyboard */; };
-<<<<<<< HEAD
-=======
 		713D2ADB1F473BB500C88E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D2ADA1F473BB500C88E16 /* AppDelegate.swift */; };
 		713D2ADD1F473BB600C88E16 /* ViewControllerMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713D2ADC1F473BB600C88E16 /* ViewControllerMac.swift */; };
 		713D2ADF1F473BB600C88E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713D2ADE1F473BB600C88E16 /* Assets.xcassets */; };
 		713D2AE21F473BB600C88E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713D2AE01F473BB600C88E16 /* Main.storyboard */; };
 		713D2AE71F473C4D00C88E16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7188840C1C37E84D00C321F5 /* Localizable.strings */; };
 		717E76E51C3549A0006EA17E /* crystal_ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 717E76E41C3549A0006EA17E /* crystal_ball.jpg */; };
->>>>>>> macdevelop
 		7188840A1C37E84D00C321F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7188840C1C37E84D00C321F5 /* Localizable.strings */; };
 		719C3D4A1C3A83E7007E8EA5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 719C3D491C3A83E6007E8EA5 /* Settings.bundle */; };
 		71CB74A81F594E480010603A /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB74A71F594E480010603A /* Backend.swift */; };
@@ -45,8 +42,6 @@
 		713964E61C3904690072F573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		713D2AD01F473A6A00C88E16 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		713D2AD11F473A6A00C88E16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		713D2AD81F473BB400C88E16 /* Crystal Ball Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crystal Ball Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713D2ADA1F473BB500C88E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		713D2ADC1F473BB600C88E16 /* ViewControllerMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMac.swift; sourceTree = "<group>"; };
@@ -54,7 +49,6 @@
 		713D2AE11F473BB600C88E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		713D2AE31F473BB600C88E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		717E76E41C3549A0006EA17E /* crystal_ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crystal_ball.jpg; sourceTree = "<group>"; };
->>>>>>> macdevelop
 		717E76E81C354CCF006EA17E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		717E76E91C354CD7006EA17E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		717E76EA1C354CDE006EA17E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -128,12 +122,8 @@
 		7120BA1E1C3541B6009F35AF /* Crystal Ball */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				7188840C1C37E84D00C321F5 /* Localizable.strings */,
-=======
 				71CB74C51F5965BA0010603A /* InfoPlist.strings */,
 				717E76E41C3549A0006EA17E /* crystal_ball.jpg */,
->>>>>>> macdevelop
 				7120BA1F1C3541B6009F35AF /* AppDelegate.swift */,
 				7120BA211C3541B6009F35AF /* ViewController.swift */,
 				7120BA231C3541B6009F35AF /* Main.storyboard */,
@@ -284,11 +274,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-=======
 				717E76E51C3549A0006EA17E /* crystal_ball.jpg in Resources */,
 				71CB74C31F5965BA0010603A /* InfoPlist.strings in Resources */,
->>>>>>> macdevelop
 				7188840A1C37E84D00C321F5 /* Localizable.strings in Resources */,
 				7120BA2A1C3541B6009F35AF /* LaunchScreen.storyboard in Resources */,
 				7120BA271C3541B6009F35AF /* Assets.xcassets in Resources */,
