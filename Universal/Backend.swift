@@ -24,17 +24,17 @@ import Foundation
 
 class Backend: NSObject {
 
-	static let answerCount = 12
+    static let answerCount = 12
 
-	static func locStr(_ key: String) -> String {
-		return NSLocalizedString(key, comment: "")
-	}
+    static func locStr(_ key: String) -> String {
+        return NSLocalizedString(key, comment: "")
+    }
 
-	static func askQ(log: String, question: String) -> String {
-		var text = log
-		let key = "ans" + String(arc4random_uniform(UInt32(Backend.answerCount)))
-		text = text.appending("\nQ: \(question)\nA: \(Backend.locStr(key))")
-		return text
-	}
+    static func askQ(log: String, question: String) -> String {
+        var text = log
+        let key = "ans" + String(arc4random_uniform(UInt32(Backend.answerCount)))
+        text = text.appending("\nQ: \(question)\nA: \(Backend.locStr(key))")
+        return text
+    }
 
 }

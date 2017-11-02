@@ -23,21 +23,21 @@ import Cocoa
 
 class ViewControllerMac : NSViewController {
 
-	@IBOutlet weak var questionField: NSTextField!
-	@IBOutlet var transcript: NSTextView!
+    @IBOutlet weak var questionField: NSTextField!
+    @IBOutlet var transcript: NSTextView!
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		clearTranscript(NSNull())
-	}
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        clearTranscript(NSNull())
+    }
 
-	@IBAction func askQuestion(_ sender: Any) {
-		transcript.string = Backend.askQ(log: transcript.string, question: questionField.stringValue)
-		transcript.scrollRangeToVisible(NSMakeRange(transcript.string.count - 1, 1))
-	}
+    @IBAction func askQuestion(_ sender: Any) {
+        transcript.string = Backend.askQ(log: transcript.string, question: questionField.stringValue)
+        transcript.scrollRangeToVisible(NSMakeRange(transcript.string.count - 1, 1))
+    }
 
-	@IBAction func clearTranscript(_ sender: Any) {
-		transcript.string = Backend.locStr("transcript")
-	}
+    @IBAction func clearTranscript(_ sender: Any) {
+        transcript.string = Backend.locStr("transcript")
+    }
 
 }

@@ -77,10 +77,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func askQuestion(_ sender: AnyObject) {
-		log.text = Backend.askQ(log: log.text, question: question.text!)
-		question.text = ""
-		question.resignFirstResponder()
-		log.scrollRangeToVisible(NSMakeRange(log.text.characters.count - 1, 1))
+        log.text = Backend.askQ(log: log.text, question: question.text!)
+        question.text = ""
+        question.resignFirstResponder()
+        log.scrollRangeToVisible(NSMakeRange(log.text.characters.count - 1, 1))
     }
 
 }
