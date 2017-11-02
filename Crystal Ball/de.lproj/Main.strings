@@ -4,11 +4,12 @@
 /* Class = "UIButton"; normalTitle = "Ask Question"; ObjectID = "Gac-wd-O5T"; */
 "Gac-wd-O5T.normalTitle" = "Frage Stellen";
 
-/* Class = "UIButton"; normalTitle = "Clear Log"; ObjectID = "PIL-fb-dok"; */
+/* Class = "UIButton"; normalTitle = "Delete Transcript"; ObjectID = "PIL-fb-dok"; */
 "PIL-fb-dok.normalTitle" = "Abschrift Löschen";
 
-/* copy transcript */
+/* Class = "UIButton"; normalTitle = "Copy Transcript"; ObjectID = "jNF-9K-YKU"; */
 "jNF-9K-YKU.normalTitle" = "Abschrift Kopieren";
 
-/* settings */
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "snh-Sn-AuD"; */
 "snh-Sn-AuD.normalTitle" = "Sprache";
+

@@ -26,21 +26,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var question: UITextField!
     @IBOutlet weak var log: UITextView!
 
-    let answerCount = 12
-
-    func locStr(_ key: String) -> String{
-        return NSLocalizedString(key, comment: "")
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        log.text = locStr("transcript")
+        clearLog(NSNull())
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -51,9 +40,9 @@ class ViewController: UIViewController {
             let lang = (sud.value(forKey: "AppleLanguages") as! [AnyObject])[0] as! String
             if lang != NSLocalizedString("langCode", comment: "") {
                 var okPressed = false
-                let alert = UIAlertController(title: "Language Selection", message: locStr("changeLang"), preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: locStr("No"), style: .cancel, handler: nil))
-                alert.addAction(UIAlertAction(title: locStr("Yes"), style: .default, handler: { _ in
+                let alert = UIAlertController(title: "Language Selection", message: Backend.locStr("changeLang"), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: Backend.locStr("No"), style: .cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: Backend.locStr("Yes"), style: .default, handler: { _ in
                     sud.set([lang], forKey: "AppleLanguages")
                     sud.synchronize()
                     okPressed = true
@@ -61,7 +50,7 @@ class ViewController: UIViewController {
                 
                 present(alert, animated: true, completion: nil)
                 if okPressed{
-                    let newalert = UIAlertController(title: "", message: locStr("changeLang2"), preferredStyle: .alert)
+                    let newalert = UIAlertController(title: "", message: Backend.locStr("changeLang2"), preferredStyle: .alert)
                     present(newalert, animated: true, completion: nil)
                 }
             }
@@ -70,30 +59,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openSettingsPane(_ sender: AnyObject) {
-        let alert = UIAlertController(title: locStr("warning"), message: locStr("confirmLeave"), preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: locStr("No"), style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: locStr("Yes"), style: .destructive, handler: { _ in
+        let alert = UIAlertController(title: Backend.locStr("warning"), message: Backend.locStr("confirmLeave"), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: Backend.locStr("No"), style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: Backend.locStr("Yes"), style: .destructive, handler: { _ in
             NotificationCenter.default.post(name: Notification.Name(rawValue: "userDidEnterSettings"), object: nil)
-			UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
         }))
         present(alert, animated: true, completion: nil)
     }
 
     @IBAction func clearLog(_ sender: AnyObject) {
-        log.text = locStr("transcript")
+        log.text = Backend.locStr("transcript")
     }
 
     @IBAction func copyText(_ sender: AnyObject) {
-        UIPasteboard.general.string = locStr("transcript") + "\n" + String(describing: Date()) + "\n" + log.text
+        UIPasteboard.general.string = Backend.locStr("transcript") + "\n" + String(describing: Date()) + "\n" + log.text
     }
 
     @IBAction func askQuestion(_ sender: AnyObject) {
-        let text = NSMutableString(string: log.text);
-        let key = "ans" + String(arc4random_uniform(UInt32(answerCount)))
-        text.appendFormat("\nQ: %@\nA: %@", question.text!,
-            locStr(key)
-        )
-        log.text = text as String
+        log.text = Backend.askQ(log: log.text, question: question.text!)
         question.text = ""
         question.resignFirstResponder()
         log.scrollRangeToVisible(NSMakeRange(log.text.characters.count - 1, 1))
