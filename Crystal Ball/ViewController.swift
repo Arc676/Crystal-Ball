@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: Backend.locStr("No"), style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: Backend.locStr("Yes"), style: .destructive, handler: { _ in
             NotificationCenter.default.post(name: Notification.Name(rawValue: "userDidEnterSettings"), object: nil)
-			UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
         }))
         present(alert, animated: true, completion: nil)
     }
