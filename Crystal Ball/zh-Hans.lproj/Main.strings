@@ -1,5 +1,5 @@
 /* Class = "UILabel"; text = "Enter your yes/no question here"; ObjectID = "0iD-Sl-dme"; */
-"0iD-Sl-dme.text" = "在这儿输入您的是非问题";
+"0iD-Sl-dme.text" = "在这儿输入您的是否问题";
 
 /* Class = "UIButton"; normalTitle = "Ask Question"; ObjectID = "Gac-wd-O5T"; */
 "Gac-wd-O5T.normalTitle" = "问问题";
