@@ -2,9 +2,9 @@
 //  ViewController.swift
 //  Crystal Ball
 //
-//  Created by Alessandro Vinciguerra on 12/31/15.
+//  Created by Alessandro Vinciguerra on 2015-12-31.
 //      <alesvinciguerra@gmail.com>
-//Copyright (C) 2015-2017 Arc676/Alessandro Vinciguerra
+//Copyright (C) 2015-2019 Arc676/Alessandro Vinciguerra
 
 //This program is free software: you can redistribute it and/or modify
 //it under the terms of the GNU General Public License as published by
